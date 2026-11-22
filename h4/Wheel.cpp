@@ -1,0 +1,29 @@
+#include "Wheel.h"
+#include <string>
+using namespace std;
+
+Wheel::Wheel() {
+	size = 0;
+	type = "ei tietoa";
+}
+
+Wheel::Wheel(int s, string t) {
+	size = s;
+	type = t;
+}
+
+int Wheel::getSize() {
+	return size;
+}
+
+void Wheel::setSize(int s) {
+	size = s;
+}
+
+string Wheel::getType() {
+	return type;
+}
+
+void Wheel::setType(string t) {
+	type = t;
+}
